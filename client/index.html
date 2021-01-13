@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stripe Checkout Sample</title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="togethere-background"><img src="img/ozone.png" width="120" height="120"></div>
+    <div class="sr-root">
+      <div class="sr-main">
+        <header class="sr-header">
+        </header>
+        <h1>Choose a plan </h1>
+<div>
+          <td colspan="3" valign="top" class='tabbed-content-container ui-corner-all'>
+                  <tr>
+              <td>
+                  <button id= "Reply-open-button-1"    class="t-button t-state-default reply-button Reply-open-button-1" value =  "1">
+                      MEETUPS</button>
+                  <button id= "Alert-open-button-1"    class="Alert-open-button-1" value = "1">
+                      SOCIAL LOUNGES</button>
+                  <button id= "Close-open-button-1"    class="Close-open-button-1" value = "1">
+                      EXPO/CONFERENCE</button>
+                  <button id= "market-open-button-1"    class="market-open-button-1" value = "1">
+                      MARKETPLACE</button>    
+              </td>
+          </tr>
+</div>
+
+<div style="display: none" class="Reply-div-1 div-1">
+     <div class="price-table-container">
+          <section>
+            <div class="name">Starter</div>
+          </section>
+          <section>
+            <div class="name">Medium</div>
+          </section>
+          <section>
+            <div class="name">Professional</div>
+          </section>
+        </div>
+<br>
+        <div class="price-table-container">
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />       
+            <div class="price">$12</div>
+            <div class="duration">per month</div>
+            
+            <div class="sr-payment-form payment-view">
+          <!-- <label class="sr-checkbox-label">
+            <span>Add optional donation</span> -->
+            <!-- <select>
+            <div class="donations">
+              <option button class="donation" data-amount="1">$1</option>
+              <option button class="donation" data-amount="5">$5</option>
+              <option button class="donation" data-amount="20">$20</option>
+            </select> -->
+              <button id="basic-plan-btn">Select</button>
+            
+            </div>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$18</div>
+            <div class="duration">per month</div>
+            <button id="medium-plan-btn">Select</button>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$30</div>
+            <div class="duration">per month</div>
+            <button id="pro-plan-btn">Select</button>
+          </section>
+        </div>
+    
+      
+          
+</div>
+
+<div style="display: none" class="Alert-div-1 div-1">
+   <div class="price-table-container">
+          <section>
+            <div class="name">Starter</div>
+          </section>
+          <section>
+            <div class="name">Medium</div>
+          </section>
+          <section>
+            <div class="name">Professional</div>
+          </section>
+        </div>
+<br>
+
+        <div class="price-table-container">
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />       
+            <div class="price">$12</div>
+            <div class="duration">per month</div>
+            
+            <div class="sr-payment-form payment-view">
+          <!-- <label class="sr-checkbox-label">
+            <span>Add optional donation</span> -->
+            <!-- <select>
+            <div class="donations">
+              <option button class="donation" data-amount="1">$1</option>
+              <option button class="donation" data-amount="5">$5</option>
+              <option button class="donation" data-amount="20">$20</option>
+            </select> -->
+              <button id="basic-plan-btn">Select</button>
+            
+            </div>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$18</div>
+            <div class="duration">per month</div>
+            <button id="medium-plan-btn">Select</button>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$30</div>
+            <div class="duration">per month</div>
+            <button id="pro-plan-btn">Select</button>
+          </section>
+        </div>
+    
+</div>
+
+<div style="display: none" class="Close-div-1 div-1">
+   <div class="price-table-container">
+          <section>
+            <div class="name">Starter</div>
+          </section>
+          <section>
+            <div class="name">Medium</div>
+          </section>
+          <section>
+            <div class="name">Professional</div>
+          </section>
+        </div>
+<br>
+
+        <div class="price-table-container">
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />       
+            <div class="price">$12</div>
+            <div class="duration">per month</div>
+            
+            <div class="sr-payment-form payment-view">
+          <!-- <label class="sr-checkbox-label">
+            <span>Add optional donation</span> -->
+            <!-- <select>
+            <div class="donations">
+              <option button class="donation" data-amount="1">$1</option>
+              <option button class="donation" data-amount="5">$5</option>
+              <option button class="donation" data-amount="20">$20</option>
+            </select> -->
+              <button id="basic-plan-btn">Select</button>
+            
+            </div>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$18</div>
+            <div class="duration">per month</div>
+            <button id="medium-plan-btn">Select</button>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$30</div>
+            <div class="duration">per month</div>
+            <button id="pro-plan-btn">Select</button>
+          </section>
+        </div>
+    
+</div>
+
+<div style="display: none" class="market-div-1 div-1">
+   <div class="price-table-container">
+          <section>
+            <div class="name">Starter</div>
+          </section>
+          <section>
+            <div class="name">Medium</div>
+          </section>
+          <section>
+            <div class="name">Professional</div>
+          </section>
+        </div>
+<br>
+
+        <div class="price-table-container">
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />       
+            <div class="price">$12</div>
+            <div class="duration">per month</div>
+            
+            <div class="sr-payment-form payment-view">
+          <!-- <label class="sr-checkbox-label">
+            <span>Add optional donation</span> -->
+            <!-- <select>
+            <div class="donations">
+              <option button class="donation" data-amount="1">$1</option>
+              <option button class="donation" data-amount="5">$5</option>
+              <option button class="donation" data-amount="20">$20</option>
+            </select> -->
+              <button id="basic-plan-btn">Select</button>
+            
+            </div>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$18</div>
+            <div class="duration">per month</div>
+            <button id="medium-plan-btn">Select</button>
+          </section>
+          <section>
+            <img
+              src="img/ozone.png"
+              width="120"
+              height="120"
+            />
+            <div class="price">$30</div>
+            <div class="duration">per month</div>
+            <button id="pro-plan-btn">Select</button>
+          </section>
+        </div>
+    
+</div>
+
+    </div>
+    <div id="error-message" class="error-message"></div>
+
+    <script>
+      $(".Reply-open-button-1").click(function () {
+    $("div.Reply-div-1").show("slow");
+    
+    $("div.market-div-1").hide("slow");
+    $("div.Alert-div-1").hide("slow");
+    $("div.Close-div-1").hide("slow");
+});
+
+$(".Alert-open-button-1").click(function () {
+    $("div.Alert-div-1").show("slow");
+    
+    $("div.market-div-1").hide("slow");
+    $("div.Reply-div-1").hide("slow");
+    $("div.Close-div-1").hide("slow");
+});
+
+$(".Close-open-button-1").click(function () {
+    $("div.Close-div-1").show("slow");
+    
+    $("div.market-div-1").hide("slow");
+    $("div.Alert-div-1").hide("slow");
+    $("div.Reply-div-1").hide("slow");
+});
+
+$(".market-open-button-1").click(function () {
+    $("div.market-div-1").show("slow");
+    
+    $("div.Close-div-1").hide("slow");
+    $("div.Alert-div-1").hide("slow");
+    $("div.Reply-div-1").hide("slow");
+});
+
+
+
+$(".Hide-1").click(function() {
+    $(".div-1").hide("slow");
+});
+
+    </script>
+  </body>
+</html>
