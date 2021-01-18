@@ -47,6 +47,15 @@ fetch("/setup")
     var basicPriceId = json.basicPrice;
     var proPriceId = json.proPrice;
     var mediumPriceId = json.mediumPrice;
+    var SocialbasicPriceId = json.SocialbasicPrice;
+    var SocialproPriceId = json.SocialproPrice;
+    var SocialmediumPriceId = json.SocialmediumPrice;
+    var ExpobasicPriceId = json.ExpobasicPrice;
+    var ExpoproPriceId = json.ExpoproPrice;
+    var ExpomediumPriceId = json.ExpomediumPrice;
+    var MarketbasicPriceId = json.MarketbasicPrice;
+    var MarketproPriceId = json.MarketproPrice;
+    var MarketmediumPriceId = json.MarketmediumPrice;
 
     var stripe = Stripe(publishableKey);
     // Setup event handler to create a Checkout Session when button is clicked
@@ -81,6 +90,129 @@ fetch("/setup")
       .getElementById("pro-plan-btn")
       .addEventListener("click", function(evt) {
         createCheckoutSession(proPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("social-basic-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(SocialbasicPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+    // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("social-medium-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(SocialmediumPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("social-pro-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(SocialproPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("expo-basic-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(ExpobasicPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+    // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("expo-medium-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(ExpomediumPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("expo-pro-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(ExpoproPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("market-basic-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(MarketbasicPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+
+    // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("market-medium-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(MarketmediumPriceId).then(function(data) {
+          // Call Stripe.js method to redirect to the new Checkout page
+          stripe
+            .redirectToCheckout({
+              sessionId: data.sessionId
+            })
+            .then(handleResult);
+        });
+      });
+      // Setup event handler to create a Checkout Session when button is clicked
+    document
+      .getElementById("market-pro-plan-btn")
+      .addEventListener("click", function(evt) {
+        createCheckoutSession(MarketproPriceId).then(function(data) {
           // Call Stripe.js method to redirect to the new Checkout page
           stripe
             .redirectToCheckout({

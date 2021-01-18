@@ -12,6 +12,15 @@ RSpec.describe 'server APIs' do
     expect(config).to have_key('basicPrice')
     expect(config).to have_key('mediumPrice')
     expect(config).to have_key('proPrice')
+    expect(config).to have_key('SocialbasicPrice')
+    expect(config).to have_key('SocialmediumPrice')
+    expect(config).to have_key('SocialproPrice')
+    expect(config).to have_key('ExpobasicPrice')
+    expect(config).to have_key('ExpomediumPrice')
+    expect(config).to have_key('ExpoproPrice')
+    expect(config).to have_key('MarketbasicPrice')
+    expect(config).to have_key('MarketmediumPrice')
+    expect(config).to have_key('MarketproPrice')
 
     # Without price
     resp, status = post_json('/create-checkout-session', {

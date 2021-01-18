@@ -31,13 +31,17 @@ body {
   color: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
+ul{
+  font-size: large;
+  color: aliceblue;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--body-color);
+  color: rgb(52 255 1 / 70%);
   margin-top: 2px;
   margin-bottom: 4px;
 }
@@ -271,7 +275,7 @@ input[type="number"]::placeholder {
 
 /* Buttons and links */
 button {
-  background: var(--accent-color);
+  background: #1890ff;
   border-radius: var(--radius);
   color: white;
   border: 0;
@@ -292,6 +296,50 @@ button:active {
 button:disabled {
   opacity: 0.5;
   cursor: none;
+}
+
+.t-button{
+  position: absolute;
+  left: 9%;
+  width: 15%;
+}
+.Alert-open-button-1{
+  position: absolute;
+  left: 32%;
+  width: 15%;
+}
+.Close-open-button-1{
+  position: absolute;
+  right: 30%;
+  width: 15%;
+}
+.market-open-button-1{
+  position: absolute;
+  right: 9%;
+  top: 25.1%;
+  width: 15%;
+}
+
+.Reply-div-1{
+  position: absolute;
+  top: 36%;
+  left: 6%;
+  width: 100%
+}
+.Alert-div-1{
+  position: absolute;
+  top: 36%;
+  left: 6%;
+}
+.Close-div-1{
+  position: absolute;
+  top: 36%;
+  left: 6%;
+}
+.market-div-1{
+  position: absolute;
+  top: 36%;
+  left: 6%;
 }
 
 .sr-payment-form button,
@@ -369,7 +417,7 @@ pre {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #9400b3;
+  background-color: #001529;
   height: 275px;
 }
 
@@ -393,6 +441,9 @@ pre {
 .price-table-container {
   display: flex;
   box-shadow: 0 2px 5px 0 rgba(60, 66, 87, .08), 0 1px 1px 0 rgba(0, 0, 0, .12);
+  position: relative;
+  width: 100%;
+  top: 40px;
 }
 
 .price-table-container section {
@@ -410,7 +461,7 @@ pre {
   border-bottom-right-radius: 8px;
   border-right: 1px solid #efefef;
   position: relative;
-  left: -1%
+  left: -1%;
 }
 
 .price-table-container section:last-of-type {
@@ -441,7 +492,7 @@ pre {
 }
 
 .price-table-container .price {
-  color: #000000;
+  color: #fff;
   font-size: xx-large;
   font-weight: 600;
   margin-bottom: 8px;
@@ -632,4 +683,53 @@ input[type="number"]::-webkit-outer-spin-button {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@media screen and (max-width: 480px){
+body {
+  background-color: var(--dark);
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+.t-button{
+  position: absolute;
+  left: 0%;
+  width: 24%;
+  height: 6.4%
+  }
+.Alert-open-button-1{
+  position: absolute;
+  left: 24%;
+  width: 25%;
+ }  
+.Close-open-button-1{
+  position: absolute;
+  right: 21%;
+  width: 30%
+ } 
+.market-open-button-1{
+  position: absolute;
+  right: 0%;
+  width: 21%;
+  top: 25.3%
+ } 
+.price-table-container section:first-of-type{
+  position: absolute;
+  top: 0;
+  left: -21px;
+  width: 372px;
+ } 
+.price-table-container section{
+  position: relative;
+  top: 1237px;
+  right: 21px;
+  width: 372px
+ }
+.price-table-container section:last-of-type{
+  position: absolute;
+  top: 2469px;
+  right: 6.2%;
+} 
 }

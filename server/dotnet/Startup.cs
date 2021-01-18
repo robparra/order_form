@@ -32,6 +32,15 @@ namespace server
                 options.BasicPrice = Environment.GetEnvironmentVariable("BASIC_PRICE_ID");
                 options.MediumPrice = Environment.GetEnvironmentVariable("MEDIUM_PRICE_ID");
                 options.ProPrice = Environment.GetEnvironmentVariable("PRO_PRICE_ID");
+                options.SocialBasicPrice = Environment.GetEnvironmentVariable("SOCIAL_BASIC_PRICE_ID");
+                options.SocialMediumPrice = Environment.GetEnvironmentVariable("SOCIAL_MEDIUM_PRICE_ID");
+                options.SocialProPrice = Environment.GetEnvironmentVariable("SOCIAL_PRO_PRICE_ID");
+                options.ExpoBasicPrice = Environment.GetEnvironmentVariable("EXPO_BASIC_PRICE_ID");
+                options.ExpoMediumPrice = Environment.GetEnvironmentVariable("EXPO_MEDIUM_PRICE_ID");
+                options.ExpoProPrice = Environment.GetEnvironmentVariable("EXPO_PRO_PRICE_ID");
+                options.MarketBasicPrice = Environment.GetEnvironmentVariable("MARKET_BASIC_PRICE_ID");
+                options.MarketMediumPrice = Environment.GetEnvironmentVariable("MARKET_MEDIUM_PRICE_ID");
+                options.MarketProPrice = Environment.GetEnvironmentVariable("MARKET_PRO_PRICE_ID");
                 options.Domain = Environment.GetEnvironmentVariable("DOMAIN");
             });
 

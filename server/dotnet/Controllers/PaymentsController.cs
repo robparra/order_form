@@ -28,6 +28,15 @@ namespace server.Controllers
                 ProPrice = this.options.Value.ProPrice,
                 BasicPrice = this.options.Value.BasicPrice,
                 MediumPrice = this.options.Value.MediumPrice,
+                SocialProPrice = this.options.Value.ProPrice,
+                SocialBasicPrice = this.options.Value.BasicPrice,
+                SocialMediumPrice = this.options.Value.MediumPrice,
+                ExpoProPrice = this.options.Value.ProPrice,
+                ExpoBasicPrice = this.options.Value.BasicPrice,
+                ExpoMediumPrice = this.options.Value.MediumPrice,
+                MarketProPrice = this.options.Value.ProPrice,
+                MarketBasicPrice = this.options.Value.BasicPrice,
+                MarketMediumPrice = this.options.Value.MediumPrice,
                 PublishableKey = this.options.Value.PublishableKey,
             };
         }

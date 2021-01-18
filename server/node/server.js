@@ -80,6 +80,15 @@ app.get("/setup", (req, res) => {
     basicPrice: process.env.BASIC_PRICE_ID,
     mediumPrice: process.env.MEDIUM_PRICE_ID,
     proPrice: process.env.PRO_PRICE_ID,
+    SocialbasicPrice: process.env.SOCIAL_BASIC_PRICE_ID,
+    SocialmediumPrice: process.env.SOCIAL_MEDIUM_PRICE_ID,
+    SocialproPrice: process.env.SOCIAL_PRO_PRICE_ID,
+    ExpobasicPrice: process.env.EXPO_BASIC_PRICE_ID,
+    ExpomediumPrice: process.env.EXPO_MEDIUM_PRICE_ID,
+    ExpoproPrice: process.env.EXPO_PRO_PRICE_ID,
+    MarketbasicPrice: process.env.MARKET_BASIC_PRICE_ID,
+    MarketmediumPrice: process.env.MARKET_MEDIUM_PRICE_ID,
+    MarketproPrice: process.env.MARKET_PRO_PRICE_ID,
   });
 });
 

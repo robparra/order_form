@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <title>Stripe Checkout Sample</title>
     <meta name="description" content="A demo of Stripe Payment Intents" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/ozonenew.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
     <!-- Load Stripe.js on your website. -->
@@ -16,12 +17,12 @@
 
   <body>
     
-    <div class="togethere-background"><img src="img/ozone.png" width="120" height="120"></div>
-    <div class="sr-root">
+    
+    <div class="sr-root"><div class="togethere-background"><img src="img/ozoneblanco.png" width="300"></div>
       <div class="sr-main">
         <header class="sr-header">
         </header>
-        <h1>Choose a plan </h1>
+        <h1 style="position: relative;">Choose a plan </h1>
 <div>
           <td colspan="3" valign="top" class='tabbed-content-container ui-corner-all'>
                   <tr>
@@ -31,35 +32,66 @@
                   <button id= "Alert-open-button-1"    class="Alert-open-button-1" value = "1">
                       SOCIAL LOUNGES</button>
                   <button id= "Close-open-button-1"    class="Close-open-button-1" value = "1">
-                      EXPO/CONFERENCE</button>
+                      EXPO / CONFERENCE</button>
                   <button id= "market-open-button-1"    class="market-open-button-1" value = "1">
-                      MARKETPLACE</button>    
+                     XR COMMERCE</button>    
               </td>
           </tr>
 </div>
 
+<!-- MEETUPS -->
 <div style="display: none" class="Reply-div-1 div-1">
+  <div ><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Meetups</h3></div>
      <div class="price-table-container">
           <section>
-            <div class="name">Starter</div>
+            <div class="name">Small</div>
           </section>
           <section>
             <div class="name">Medium</div>
           </section>
           <section>
-            <div class="name">Professional</div>
+            <div class="name">Large</div>
           </section>
         </div>
 <br>
         <div class="price-table-container">
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />       
-            <div class="price">$12</div>
+          <section  style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$50</div>
             <div class="duration">per month</div>
+            <button id="basic-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Concurrent live chat Capacity: 10-50 </li> 
+                <li>Environment: 1</li> 
+                <li>Description: 1 regular meetup room</li> 
+                <li># of live chat channels (50 each): 1</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(1)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Audio and Video conferencing</li> 
+                <li>Standard Avatar selector</li> 
+                <li>password protected</li> 
+                <li>SSL certified https:// URL</li>        
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)          </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $50/month</li> 
+                <li>Extra scene with 100pple capacity from library: $100/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div> 
+            <br><br>
+            
+            
             
             <div class="sr-payment-form payment-view">
           <!-- <label class="sr-checkbox-label">
@@ -70,59 +102,145 @@
               <option button class="donation" data-amount="5">$5</option>
               <option button class="donation" data-amount="20">$20</option>
             </select> -->
-              <button id="basic-plan-btn">Select</button>
+              
             
             </div>
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$18</div>
+          <section   style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$90</div>
             <div class="duration">per month</div>
             <button id="medium-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Concurrent live chat Capacity: 51-100 </li>
+                <li>Environment: 2</li> 
+                <li>Description: 1 large meetup room (100 pple capacity) + 1 social lounge</li> 
+                <li># of live chat channels (50 each): 2</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Audio and Video conferencing</li> 
+                <li>Standard Avatar selector</li> 
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li>       
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)          </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $50/month</li> 
+                <li>Extra scene with 100pple capacity from library: $100/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div> <br>
+            
+            
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$30</div>
+          <section   style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$170</div>
             <div class="duration">per month</div>
             <button id="pro-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Concurrent live chat Capacity: 101-200 </li>
+                <li>Environment: 4</li> 
+                <li>Description: 2 large meetup room (100pple capacity) + 2 social lounges</li> 
+                <li># of live chat channels (50 each): 4</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Audio and Video conferencing</li> 
+                <li>Standard Avatar selector</li> 
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>Custom Avatar Creator </li>         
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: included</li> 
+                <li>Landing page: included </li> 
+                <li>OAuth REgistration with tracking: included</li>   
+                <li>Custom Menu buttons linking out: 10 included/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $30/month</li> 
+                <li>Extra scene with 100pple capacity from library: $80/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div> 
+           
+            
           </section>
         </div>
-    
-      
-          
+   
 </div>
+
+<!-- SOCIAL -->
 
 <div style="display: none" class="Alert-div-1 div-1">
+  <div ><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Social Lounges</h3></div>
    <div class="price-table-container">
           <section>
-            <div class="name">Starter</div>
+            <div class="name">Small</div>
           </section>
           <section>
             <div class="name">Medium</div>
           </section>
           <section>
-            <div class="name">Professional</div>
+            <div class="name">Large</div>
           </section>
         </div>
 <br>
 
         <div class="price-table-container">
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />       
-            <div class="price">$12</div>
-            <div class="duration">per month</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$1</div> 
+            <div class="duration">per day</div> <br>
+            <div class="duration">subscribe yearly and save</div> 
+            <div class="price">$10</div> 
+             <button id="social-basic-plan-btn">Select</button>   
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 1 themed Social Environments </li>
+                <li>concurrent live chat Capacity / environment: 200</li> 
+                <li># of live chat channels (50 each): 4</li>
+                <li>Total concurrent capacity: 200</li>
+                <li>Leadtime required to implement: 1month</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(1)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li>       
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)          </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $50/month</li> 
+                <li>Extra scene with 100pple capacity from library: $100/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+            
             
             <div class="sr-payment-form payment-view">
           <!-- <label class="sr-checkbox-label">
@@ -133,57 +251,146 @@
               <option button class="donation" data-amount="5">$5</option>
               <option button class="donation" data-amount="20">$20</option>
             </select> -->
-              <button id="basic-plan-btn">Select</button>
+             
             
             </div>
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$18</div>
-            <div class="duration">per month</div>
-            <button id="medium-plan-btn">Select</button>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+           
+            <div class="price">$2.5</div>
+            <div class="duration">per day</div><br>
+            <div class="duration">subscribe yearly and save</div> 
+            <div class="price">$25</div>
+            <button id="social-medium-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 3 themed Social Environments </li>
+                <li>concurrent live chat Capacity / environment: 200</li> 
+                <li># of live chat channels (50 each): 4</li>
+                <li>Total concurrent capacity: 600</li>
+                <li>Leadtime required to implement: 2months</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li>       
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)          </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $50/month</li> 
+                <li>Extra scene with 100pple capacity from library: $100/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+            
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$30</div>
-            <div class="duration">per month</div>
-            <button id="pro-plan-btn">Select</button>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$5</div>
+            <div class="duration">per day</div><br>
+            <div class="duration">subscribe yearly and save</div> 
+            <div class="price">$50</div>
+            <button id="social-pro-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 5 themed Social Environments </li>
+                <li>concurrent live chat Capacity / environment: 300</li> 
+                <li># of live chat channels (50 each): 6</li>
+                <li>Total concurrent capacity: 1500</li>
+                <li>Leadtime required to implement: 3months</li> 
+                            <h3>Moderator Controls</h3>
+                <li>SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>Custom Avatar Creator </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: included</li> 
+                <li>Landing page: included          </li> 
+                <li>OAuth REgistration with tracking: included</li>   
+                <li>Custom Menu buttons linking out: 10 included</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Extra scene with 50pple capacity from library: $30/month</li> 
+                <li>Extra scene with 100pple capacity from library: $80/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+            
           </section>
         </div>
     
 </div>
 
+<!-- EXPO -->
 <div style="display: none" class="Close-div-1 div-1">
+  <div><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Expo/Conference</h3></div>
    <div class="price-table-container">
-          <section>
-            <div class="name">Starter</div>
+          <section >
+            <div class="name">Small</div>
           </section>
           <section>
             <div class="name">Medium</div>
           </section>
           <section>
-            <div class="name">Professional</div>
+            <div class="name">Large</div>
           </section>
         </div>
 <br>
 
         <div class="price-table-container">
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />       
-            <div class="price">$12</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$250</div> 
             <div class="duration">per month</div>
+            <button id="expo-basic-plan-btn">Select</button>  
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 1 Small </li>
+                <li>concurrent live chat Capacity / environment: 10-50</li> 
+                <li># of live chat channels (50 each): </li>
+                <li># of exhibitor booths: 20</li>
+                <li>COST/BOOTH/MONTH: 12.5</li>
+                <li>Leadtime required to implement: 1month</li> 
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(1)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)        </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+    
+        </div>  
+            
+            
             
             <div class="sr-payment-form payment-view">
           <!-- <label class="sr-checkbox-label">
@@ -194,57 +401,140 @@
               <option button class="donation" data-amount="5">$5</option>
               <option button class="donation" data-amount="20">$20</option>
             </select> -->
-              <button id="basic-plan-btn">Select</button>
+              
             
             </div>
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$18</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$450</div>
             <div class="duration">per month</div>
-            <button id="medium-plan-btn">Select</button>
+            <button id="expo-medium-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 1 Large </li>
+                <li>concurrent live chat Capacity / environment: 51-100</li> 
+                <li># of live chat channels (50 each): 2</li>
+                <li># of exhibitor booths: 50</li>
+                <li>COST/BOOTH/MONTH: 9</li>
+                <li>Leadtime required to implement: 2months</li> 
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(1)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)        </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+            
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$30</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$700</div>
             <div class="duration">per month</div>
-            <button id="pro-plan-btn">Select</button>
+            <button id="expo-pro-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Environment: 1 Extra large </li>
+                <li>concurrent live chat Capacity / environment: 101-200</li> 
+                <li># of live chat channels (50 each): 4</li>
+                <li># of exhibitor booths: 100</li>
+                <li>COST/BOOTH/MONTH: 7</li>
+                <li>Leadtime required to implement: 3months</li> 
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(1)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>
+                <li>Custom Avatar Creator </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: included</li> 
+                <li>Landing page: included        </li> 
+                <li>OAuth REgistration with tracking: included</li>   
+                <li>Custom Menu buttons linking out: 10 included</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+            
           </section>
         </div>
     
 </div>
 
+<!-- MARKET -->
 <div style="display: none" class="market-div-1 div-1">
+  <div><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">XR Commerce</h3></div>
    <div class="price-table-container">
           <section>
-            <div class="name">Starter</div>
+            <div class="name">Showroom</div>
           </section>
           <section>
-            <div class="name">Medium</div>
+            <div class="name">Small Store</div>
           </section>
           <section>
-            <div class="name">Professional</div>
+            <div class="name">Large Store</div>
           </section>
         </div>
 <br>
 
         <div class="price-table-container">
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />       
-            <div class="price">$12</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+                
+            <div class="price">$200</div>
             <div class="duration">per month</div>
+             <button id="market-basic-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Description: Showcase your products and brand with sales team to close sales offline </li>
+                <li>Product capacity: Up to 10 categories</li> 
+                <li>concurrent live chat Capacity: 50</li>
+                <li># of Virtual Stores: 1</li>
+                <li># of live chat channels (50 each): 1</li> 
+                <li>Leadtime required to implement: 1month</li>
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)        </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
             
             <div class="sr-payment-form payment-view">
           <!-- <label class="sr-checkbox-label">
@@ -255,29 +545,81 @@
               <option button class="donation" data-amount="5">$5</option>
               <option button class="donation" data-amount="20">$20</option>
             </select> -->
-              <button id="basic-plan-btn">Select</button>
+             
             
             </div>
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$18</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$250</div>
             <div class="duration">per month</div>
-            <button id="medium-plan-btn">Select</button>
+            <button id="market-medium-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Description: for small store inventory </li>
+                <li>Product capacity: Up to 100 categories</li> 
+                <li>concurrent live chat Capacity: 10-50</li>
+                <li># of Virtual Stores: 1</li>
+                <li># of live chat channels (50 each): 1</li> 
+                <li>Leadtime required to implement: 1month</li>
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)        </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
           </section>
-          <section>
-            <img
-              src="img/ozone.png"
-              width="120"
-              height="120"
-            />
-            <div class="price">$30</div>
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">$400</div>
             <div class="duration">per month</div>
-            <button id="pro-plan-btn">Select</button>
+            <button id="market-pro-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Description: For a medium store inventory </li>
+                <li>Product capacity: Up to 250 categories</li> 
+                <li>concurrent live chat Capacity: 51-100</li>
+                <li># of Virtual Stores: 1</li>
+                <li># of live chat channels (50 each): 2</li> 
+                <li>Leadtime required to implement: 2month</li>
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES(2)</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li>      
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: option ($25/month)</li> 
+                <li>Landing page: option ($25/month)        </li> 
+                <li>OAuth REgistration with tracking: option ($25/month)</li>   
+                <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
           </section>
         </div>
     
