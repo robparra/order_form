@@ -110,6 +110,19 @@ h4 {
   line-height: 17px;
   margin-top: 12px;
 }
+.Reply-name{
+  color: aliceblue;
+  position: relative;
+  font-size: xxx-large;
+  text-align: center;
+}
+
+.Reply-subname{
+  color: aliceblue;
+  position: relative;
+  text-align: center;
+  margin: 3%
+}
 
 /* Form */
 .sr-form-row {
@@ -275,9 +288,9 @@ input[type="number"]::placeholder {
 
 /* Buttons and links */
 button {
-  background: #1890ff;
+  background: #000;
   border-radius: var(--radius);
-  color: white;
+  color: #1dee05;
   border: 0;
   padding: 12px 16px;
   margin-top: 16px;
@@ -311,35 +324,32 @@ button:disabled {
 .Close-open-button-1{
   position: absolute;
   right: 30%;
-  width: 15%;
 }
 .market-open-button-1{
   position: absolute;
   right: 9%;
-  top: 25.1%;
   width: 15%;
 }
 
 .Reply-div-1{
-  position: absolute;
-  top: 36%;
-  left: 6%;
+  margin-top: 5%;
   width: 100%
 }
 .Alert-div-1{
-  position: absolute;
   top: 36%;
-  left: 6%;
+  left: 5%;
+  margin-top: 5%
 }
 .Close-div-1{
-  position: absolute;
   top: 36%;
-  left: 6%;
+  left: 5%;
+  margin-top: 5%
 }
 .market-div-1{
   position: absolute;
-  top: 36%;
-  left: 6%;
+  margin-top: 133%;
+  left: -2%;
+  width: 100%
 }
 
 .sr-payment-form button,
@@ -402,6 +412,7 @@ pre {
 
   .sr-main {
     width: auto;
+    margin: 6%
   }
 }
 
@@ -438,6 +449,86 @@ pre {
   text-align: center;
 }
 
+.price-table-container-market {
+  display: flex;
+  box-shadow: 0 2px 5px 0 rgba(60, 66, 87, .08), 0 1px 1px 0 rgba(0, 0, 0, .12);
+  position: relative;
+  width: 95%;
+  top: 40px;
+}
+
+.price-table-container-market{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 0px solid #efefef;
+  position: relative;
+  width: 100%;
+}
+
+.price-table-container-market section {
+  border-radius: 6px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  background-color: #000;
+  margin-right: 1%
+}
+
+.price-table-container-market section:first-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid #000;
+  position: relative;
+  margin-left: 4%;
+  margin-right: 1%;
+  width: 23%
+}
+
+.price-table-container-market section:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  position: relative;
+  right: -1%;
+  width: 23%
+}
+
+.price-table-container-market button {
+  background-color: #F0F0F0;
+  color: #000000;
+  border-radius: 64px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.price-table-container-market button:hover {
+  background-color: #d6d6d6;
+  filter: none;
+}
+
+.price-table-container-market .name {
+  color: #1ced04;
+  font-size: large;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.price-table-container-market .price {
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.price-table-container-market .duration {
+  color: #969696;
+  font-size: smaller;
+  text-align: center;
+}
+
 .price-table-container {
   display: flex;
   box-shadow: 0 2px 5px 0 rgba(60, 66, 87, .08), 0 1px 1px 0 rgba(0, 0, 0, .12);
@@ -446,6 +537,7 @@ pre {
   top: 40px;
 }
 
+
 .price-table-container section {
   border-radius: 6px;
   padding: 32px 28px;
@@ -453,13 +545,13 @@ pre {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 .price-table-container section:first-of-type {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-right: 1px solid #efefef;
+  border-right: 1px solid #000;
   position: relative;
   left: -1%;
 }
@@ -485,7 +577,7 @@ pre {
 }
 
 .price-table-container .name {
-  color: #7F7F7F;
+  color: #1ced04;
   font-size: large;
   margin-top: 8px;
   text-align: center;
@@ -697,39 +789,240 @@ body {
   position: absolute;
   left: 0%;
   width: 24%;
-  height: 6.4%
+  font-size: 72%;
+  padding: 4.5%
   }
 .Alert-open-button-1{
   position: absolute;
   left: 24%;
   width: 25%;
+  font-size: 72%
  }  
 .Close-open-button-1{
   position: absolute;
   right: 21%;
-  width: 30%
+  width: 30%;
+  font-size: 72%
  } 
 .market-open-button-1{
   position: absolute;
   right: 0%;
   width: 21%;
-  top: 25.3%
+  font-size: 72%
  } 
 .price-table-container section:first-of-type{
   position: absolute;
   top: 0;
-  left: -21px;
-  width: 372px;
+  width: 100%;
  } 
 .price-table-container section{
   position: relative;
-  top: 1237px;
-  right: 21px;
-  width: 372px
+  top: 1333px;
+  width: 100%;
  }
 .price-table-container section:last-of-type{
   position: absolute;
-  top: 2469px;
-  right: 6.2%;
+  top: 2660px;
+  width: 100%;
 } 
+.price-table-container-market section:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ } 
+.price-table-container-market section{
+  position: relative;
+  top: 1237px;
+  width: 100%;
+ }
+.price-table-container-market section:last-of-type{
+  position: absolute;
+  top: 2469px;
+  width: 100%;
+} 
+.Reply-name{
+  color: aliceblue;
+  position: relative;
+  margin: inherit;
+  font-size: xx-large;
+}
+.Reply-subname{
+  color: aliceblue;
+  position: relative;
+  margin: auto;
+  font-size: small;
+}
+.market-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.market23{
+
+}
+}
+@media screen and (max-width: 1024px){
+body {
+  background-color: var(--dark);
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+.t-button{
+  position: absolute;
+  left: 0%;
+  width: 24%;
+  font-size: 72%;
+  padding: 1.5%
+  }
+.Alert-open-button-1{
+  position: absolute;
+  left: 24%;
+  width: 25%;
+  font-size: 72%
+ }  
+.Close-open-button-1{
+  position: absolute;
+  right: 21%;
+  width: 30%;
+  font-size: 72%
+ } 
+.market-open-button-1{
+  position: absolute;
+  right: 0%;
+  width: 21%;
+  font-size: 72%
+ } 
+.price-table-container section:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ } 
+.price-table-container section{
+  position: relative;
+  top: 895px;
+  width: 100%;
+ }
+.price-table-container section:last-of-type{
+  position: absolute;
+  top: 1787px;
+  width: 100%;
+} 
+.price-table-container-market section:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ } 
+.price-table-container-market section{
+  position: relative;
+  top: 871px;
+  width: 100%;
+ }
+.price-table-container-market section:last-of-type{
+  position: absolute;
+  top: 2051px;
+  width: 100%;
+} 
+.Reply-name{
+  color: aliceblue;
+  position: relative;
+  margin: inherit;
+  font-size: xx-large;
+}
+.Reply-subname{
+  color: aliceblue;
+  position: relative;
+  margin: auto;
+  font-size: small;
+}
+.market-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.market23{
+
+}
+}
+@media screen and (max-width: 720px){
+body {
+  background-color: var(--dark);
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+.t-button{
+  position: absolute;
+  left: 0%;
+  width: 24%;
+  font-size: 72%;
+  padding: 4.5%
+  }
+.Alert-open-button-1{
+  position: absolute;
+  left: 24%;
+  width: 25%;
+  font-size: 72%
+ }  
+.Close-open-button-1{
+  position: absolute;
+  right: 21%;
+  width: 30%;
+  font-size: 72%
+ } 
+.market-open-button-1{
+  position: absolute;
+  right: 0%;
+  width: 21%;
+  font-size: 72%
+ } 
+.price-table-container section:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ } 
+.price-table-container section{
+  position: relative;
+  top: 1333px;
+  width: 100%;
+ }
+.price-table-container section:last-of-type{
+  position: absolute;
+  top: 2660px;
+  width: 100%;
+} 
+.price-table-container-market section:first-of-type{
+  position: absolute;
+  top: 0;
+  width: 100%;
+ } 
+.price-table-container-market section{
+  position: relative;
+  top: 1237px;
+  width: 100%;
+ }
+.price-table-container-market section:last-of-type{
+  position: absolute;
+  top: 2469px;
+  width: 100%;
+} 
+.Reply-name{
+  color: aliceblue;
+  position: relative;
+  margin: inherit;
+  font-size: xx-large;
+}
+.Reply-subname{
+  color: aliceblue;
+  position: relative;
+  margin: auto;
+  font-size: small;
+}
+.market-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.market23{
+
+}
 }

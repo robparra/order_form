@@ -20,13 +20,8 @@
     
     <div class="sr-root"><div class="togethere-background"><img src="img/ozoneblanco.png" width="300"></div>
       <div class="sr-main">
-        <header class="sr-header">
-        </header>
-        <h1 style="position: relative;">Choose a plan </h1>
-<div>
-          <td colspan="3" valign="top" class='tabbed-content-container ui-corner-all'>
-                  <tr>
-              <td>
+        <header class="sr-header"><h1 style="position: relative;">Choose a plan </h1><div>
+          
                   <button id= "Reply-open-button-1"    class="t-button t-state-default reply-button Reply-open-button-1" value =  "1">
                       MEETUPS</button>
                   <button id= "Alert-open-button-1"    class="Alert-open-button-1" value = "1">
@@ -35,13 +30,18 @@
                       EXPO / CONFERENCE</button>
                   <button id= "market-open-button-1"    class="market-open-button-1" value = "1">
                      XR COMMERCE</button>    
-              </td>
-          </tr>
+            
 </div>
+        </header>
+        
+
 
 <!-- MEETUPS -->
 <div style="display: none" class="Reply-div-1 div-1">
-  <div ><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Meetups</h3></div>
+  <div class="Reply-name">Meetups</div>
+    <div class="Reply-subname">
+    This product is designed for meetup organizers, or any groups trying to come together in a highly accessible, high performance virtual world that includes video conferencing. Use cases: Meetups, social clubs, social groups, classes, study groups, organizations and corporate regular meeetings
+    </div>
      <div class="price-table-container">
           <section>
             <div class="name">Small</div>
@@ -188,7 +188,10 @@
 <!-- SOCIAL -->
 
 <div style="display: none" class="Alert-div-1 div-1">
-  <div ><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Social Lounges</h3></div>
+  <div class="Reply-name">Social Lounges</div>
+    <div class="Reply-subname">
+    This product is designed to give a new dimension to your existing virtual event. Get your attendees off the Typical Zoom meeting, Hop.in or other 2D video conferencing solution and get people having fun and mingling. Use cases: breakout rooms, networking, social hour, fun activity, speed dating
+    </div>
    <div class="price-table-container">
           <section>
             <div class="name">Small</div>
@@ -205,10 +208,10 @@
         <div class="price-table-container">
           <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
             
-            <div class="price">$1</div> 
+            <div class="price">$1.000</div> 
             <div class="duration">per day</div> <br>
             <div class="duration">subscribe yearly and save</div> 
-            <div class="price">$10</div> 
+            <div class="price">$10.000</div> 
              <button id="social-basic-plan-btn">Select</button>   
             <div class="configuration">
               <ul>
@@ -257,10 +260,10 @@
           </section>
           <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
            
-            <div class="price">$2.5</div>
+            <div class="price">$2.500</div>
             <div class="duration">per day</div><br>
             <div class="duration">subscribe yearly and save</div> 
-            <div class="price">$25</div>
+            <div class="price">$25.000</div>
             <button id="social-medium-plan-btn">Select</button>
             <div class="configuration">
               <ul>
@@ -296,10 +299,10 @@
           </section>
           <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
             
-            <div class="price">$5</div>
+            <div class="price">$5.000</div>
             <div class="duration">per day</div><br>
             <div class="duration">subscribe yearly and save</div> 
-            <div class="price">$50</div>
+            <div class="price">$50.000</div>
             <button id="social-pro-plan-btn">Select</button>
             <div class="configuration">
               <ul>
@@ -340,7 +343,9 @@
 
 <!-- EXPO -->
 <div style="display: none" class="Close-div-1 div-1">
-  <div><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">Expo/Conference</h3></div>
+  <div class="Reply-name">Expo/Conference</div>
+    <div class="Reply-subname">
+    </div>
    <div class="price-table-container">
           <section >
             <div class="name">Small</div>
@@ -486,8 +491,14 @@
 
 <!-- MARKET -->
 <div style="display: none" class="market-div-1 div-1">
-  <div><h3 style="position: relative;left: 40%;top: 19px;font-size: xx-large;color: aliceblue">XR Commerce</h3></div>
-   <div class="price-table-container">
+  <div class="Reply-name">XR Commerce</div>
+    <div class="Reply-subname">
+    This product is designed for brands big and small that wants to recreate their online presence and be foreward thinking.
+    In a Post-covid world where in-store visits and retails are disappearing, the OZONE UNIVERSE XR-COMMERCE solution promises a bright future for brands and retail. Although in beta mode today, you can already set up your own stores, showrooms and marketplace.
+    benefits: highlight your own brand and style. Engage your audience. Keep your knowledgeable and traine workforce in_stores throughout the pandemic. Provide a unique product activation and discovery experience
+    interact with your customers in a unique memorable way. convert sales better. create a digital twin to your stores.All XR Commerce solutions subject to Sales credit card 4% transaction fee (includes processing, commission and ongoing support services)
+    </div>
+   <div class="price-table-container-market">
           <section>
             <div class="name">Showroom</div>
           </section>
@@ -497,10 +508,13 @@
           <section>
             <div class="name">Large Store</div>
           </section>
+          <section>
+            <div class="name">Market Place</div>
+          </section>
         </div>
 <br>
 
-        <div class="price-table-container">
+        <div class="price-table-container-market">
           <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
                 
             <div class="price">$200</div>
@@ -607,12 +621,51 @@
                 <li>Standard Avatar selector</li>  
                 <li>password protected</li> 
                 <li>SSL certified https:// URL </li> 
-                <li>ozoneuniverse.com/yourname URL </li>      
+                <li>ozoneuniverse.com/yourname URL </li> 
+                <li>Custom Avatar Creator</li>     
                            <h3>Optional features</h3>
                 <li>PRivate subdomain: option ($25/month)</li> 
                 <li>Landing page: option ($25/month)        </li> 
                 <li>OAuth REgistration with tracking: option ($25/month)</li>   
                 <li>Custom Menu buttons linking out: $50/5</li>  
+                <li>Your own domain in private Server: $150/month</li> 
+                <li>Google analyticswith private server: $50/month</li> 
+                <li>Live Streaming (Twitch or Youtube): $50/month</li> 
+              </ul>
+           
+            </div>
+            
+          </section>
+
+          <section style="background-image: url('img/meetups.jpg');background-size: 100% 100%;">
+            
+            <div class="price">Custom</div>
+            <div class="duration"></div>
+            <button id="market-pro-plan-btn">Select</button>
+            <div class="configuration">
+              <ul>
+                            <h3>Configuration and Capacity</h3>
+                <li>Description: open world combining small stores, large stores and showrooms </li>
+                <li>Product capacity: Unlimited</li> 
+                <li>concurrent live chat Capacity: Unlimited</li>
+                <li># of Virtual Stores: Custom (contact us)</li>
+                <li># of live chat channels (50 each): 2</li> 
+                <li>Leadtime required to implement: 3month</li>
+                            <h3>Moderator Controls</h3>
+                <li>Sales Staff SCREENSHARE: YES</li> 
+                <li>Change sky control</li> 
+                <li>Kick out attendee</li> 
+                           <h3>Features</h3>
+                <li>Standard Avatar selector</li>  
+                <li>password protected</li> 
+                <li>SSL certified https:// URL </li> 
+                <li>ozoneuniverse.com/yourname URL </li> 
+                <li>Custom Avatar Creator</li>       
+                           <h3>Optional features</h3>
+                <li>PRivate subdomain: included</li> 
+                <li>Landing page: included </li> 
+                <li>OAuth REgistration with tracking: included</li>   
+                <li>Custom Menu buttons linking out: 10 included</li>  
                 <li>Your own domain in private Server: $150/month</li> 
                 <li>Google analyticswith private server: $50/month</li> 
                 <li>Live Streaming (Twitch or Youtube): $50/month</li> 
@@ -628,45 +681,6 @@
     </div>
     <div id="error-message" class="error-message"></div>
 
-    <script>
-      $(".Reply-open-button-1").click(function () {
-    $("div.Reply-div-1").show("slow");
-    
-    $("div.market-div-1").hide("slow");
-    $("div.Alert-div-1").hide("slow");
-    $("div.Close-div-1").hide("slow");
-});
-
-$(".Alert-open-button-1").click(function () {
-    $("div.Alert-div-1").show("slow");
-    
-    $("div.market-div-1").hide("slow");
-    $("div.Reply-div-1").hide("slow");
-    $("div.Close-div-1").hide("slow");
-});
-
-$(".Close-open-button-1").click(function () {
-    $("div.Close-div-1").show("slow");
-    
-    $("div.market-div-1").hide("slow");
-    $("div.Alert-div-1").hide("slow");
-    $("div.Reply-div-1").hide("slow");
-});
-
-$(".market-open-button-1").click(function () {
-    $("div.market-div-1").show("slow");
-    
-    $("div.Close-div-1").hide("slow");
-    $("div.Alert-div-1").hide("slow");
-    $("div.Reply-div-1").hide("slow");
-});
-
-
-
-$(".Hide-1").click(function() {
-    $(".div-1").hide("slow");
-});
-
-    </script>
+    <script src="./function.js"></script>
   </body>
 </html>
