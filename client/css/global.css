@@ -332,23 +332,18 @@ button:disabled {
 }
 
 .Reply-div-1{
-  margin-top: 5%;
+  margin-top: 6%;
   width: 100%
 }
 .Alert-div-1{
-  top: 36%;
-  left: 5%;
-  margin-top: 5%
+  margin-top: 6%;
 }
 .Close-div-1{
-  top: 36%;
-  left: 5%;
-  margin-top: 5%
+  margin-top: 6%;
+  width: 100%
 }
 .market-div-1{
-  position: absolute;
-  margin-top: 133%;
-  left: -2%;
+  margin-top: 6%;
   width: 100%
 }
 
@@ -390,31 +385,6 @@ pre {
   padding-top: 12px;
 }
 
-/* Responsiveness */
-@media (min-width: 720px) {
-  .sr-root {
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .sr-header__logo {
-    background-position: left top;
-  }
-
-  .sr-payment-summary {
-    text-align: left;
-  }
-
-  .sr-content {
-    display: block;
-  }
-
-  .sr-main {
-    width: auto;
-    margin: 6%
-  }
-}
 
 /* Pasha styles – Brand-overrides, can split these out */
 :root {
@@ -463,6 +433,7 @@ pre {
   border-right: 0px solid #efefef;
   position: relative;
   width: 100%;
+  margin-left: -2%
 }
 
 .price-table-container-market section {
@@ -533,8 +504,9 @@ pre {
   display: flex;
   box-shadow: 0 2px 5px 0 rgba(60, 66, 87, .08), 0 1px 1px 0 rgba(0, 0, 0, .12);
   position: relative;
-  width: 100%;
+  width: 90%;
   top: 40px;
+  margin-left: 5%
 }
 
 
@@ -856,6 +828,18 @@ body {
   position: relative;
   margin-top: 11%
 }
+.Close-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Reply-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Alert-div-1{
+  position: relative;
+  margin-top: 11%
+}
 .market23{
 
 }
@@ -912,15 +896,21 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  left: -4%
  } 
-.price-table-container-market section{
-  position: relative;
+.price-table-container-market section:nth-of-type(2){
+  position: absolute;
   top: 871px;
+  width: 100%;
+ }
+ .price-table-container-market section:nth-of-type(3){
+  position: relative;
+  top: 1728px;
   width: 100%;
  }
 .price-table-container-market section:last-of-type{
   position: absolute;
-  top: 2051px;
+  top: 2599px;
   width: 100%;
 } 
 .Reply-name{
@@ -939,8 +929,20 @@ body {
   position: relative;
   margin-top: 11%
 }
+.Close-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Reply-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Alert-div-1{
+  position: relative;
+  margin-top: 11%;
+}
 .market23{
-
+  position: absolute;
 }
 }
 @media screen and (max-width: 720px){
@@ -951,6 +953,28 @@ body {
   color: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
+.sr-root {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .sr-header__logo {
+    background-position: left top;
+  }
+
+  .sr-payment-summary {
+    text-align: left;
+  }
+
+  .sr-content {
+    display: block;
+  }
+
+  .sr-main {
+    width: auto;
+    margin: 6%
+  }
 .t-button{
   position: absolute;
   left: 0%;
@@ -995,21 +1019,27 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  left: -3%
  } 
-.price-table-container-market section{
+.price-table-container-market section:nth-of-type(2){
   position: relative;
   top: 1237px;
   width: 100%;
  }
+ .price-table-container-market section:nth-of-type(3){
+  position: absolute;
+  top: 2452;
+  width: 100%;
+ }
 .price-table-container-market section:last-of-type{
   position: absolute;
-  top: 2469px;
+  top: 3633;
   width: 100%;
 } 
 .Reply-name{
   color: aliceblue;
   position: relative;
-  margin: inherit;
+  margin-top: 19%;
   font-size: xx-large;
 }
 .Reply-subname{
@@ -1022,6 +1052,20 @@ body {
   position: relative;
   margin-top: 11%
 }
+.Close-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Reply-div-1{
+  position: relative;
+  margin-top: 11%
+}
+.Alert-div-1{
+  position: relative;
+  margin-top: 11%;
+  margin-left: -3%
+}
+
 .market23{
 
 }
